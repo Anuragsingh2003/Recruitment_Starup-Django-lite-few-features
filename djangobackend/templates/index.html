@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+<style>
+    .body-bg {
+        background-image: url('../static/pics/Hardware\ And\ Networking.jpg');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+</style>
+<body class= "body-bg">
+	<div class="container">
+        <h1 style="color:wheat;">Recruitment startup</h1>
+		
+        <div class="row">
+            <div class="col-md-4 m-auto" id="mypg">
+            <center><h3 style="color:wheat;">Choose login Role ? </h3></center>
+            <div class="btn1">
+                <a href="/user_login" class="btn btn-success" style="text-align:center;">Candidate Login</a>
+                <a href="/register" class="btn btn-warning" style="text-align:center;">Candidate Registration</a>
+                <a href="#" class="btn btn-info" style="margin-left:25%;" onclick="showMessage()">admin login</a>
+
+            </div>
+            
+
+        </div>
+        
+		</div>
+	</div>
+	<script>
+        function showMessage() {
+            alert("only admin can use this feature.. contact- Django developer-> anurag singh ");
+        }
+    </script>
+</body>
+{% endblock body %}
+

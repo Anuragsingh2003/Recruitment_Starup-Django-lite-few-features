@@ -1,0 +1,18 @@
+<!-- recruitment/templates/recruitment/apply.html -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Apply for Job</title>
+</head>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<body>
+    <h1>Apply for Job</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Apply">
+    </form>
+</body>
+</html>
